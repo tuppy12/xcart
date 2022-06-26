@@ -24,7 +24,6 @@ except KeyError:
 
 if __name__ == "__main__":
 	os.system("git pull")
-	if "Nigeria" == fc:
 		
        from LONER import login
 	login()
