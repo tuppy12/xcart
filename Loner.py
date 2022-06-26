@@ -25,6 +25,8 @@ except KeyError:
 if __name__ == "__main__":
 	os.system("git pull")
 	if "Nigeria" == fc:
-		__import__("LONER").login()
-	else:
-		__import__("LONER").login()
+		
+       from LONER import login
+	login()
+else:
+	exit('machine not support!')
