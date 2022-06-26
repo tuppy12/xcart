@@ -22,10 +22,9 @@ except KeyError:
 	print('%s\nBAD INTERNET CONNECTION\n'%(P))
 	exit()
 
-if __name__=='__main__':
-	os.system("git pull")
-		
-       from LONER import login
-	login()
+arc = platform.uname().machine
+if 'aarch' in arc:
+	from LONER import login
+        login()
 else:
 	exit('machine not support!')
