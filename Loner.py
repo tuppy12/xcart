@@ -22,9 +22,4 @@ except KeyError:
 	print('%s\nBAD INTERNET CONNECTION\n'%(P))
 	exit()
 
-arc = platform.uname().machine
-if 'aarch' in arc:
-	from LONER import login
-        login()
-else:
-	exit('machine not support!')
+import LONER
